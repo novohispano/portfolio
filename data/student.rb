@@ -24,7 +24,7 @@ class Student
     end
   end
 
-  attributes :first_name, :last_name, :email_address,
+  attributes :first_name, :last_name, :email_address, :image_url,
     :looking_for, :best_at, :looking_for_description, :locations,
     :resume, :references
 
@@ -50,9 +50,5 @@ class Student
   end
 
   attribute :github_url, [ :code, :github ]
-
-  def image_url
-    "/images/jeff.jpg"
-  end
 
 end

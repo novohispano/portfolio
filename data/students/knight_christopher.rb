@@ -1,6 +1,7 @@
 {
   :last_name => "Knight",
   :first_name => "Christopher",
+  :image_url => "/images/students/gschool0/chris.jpg",
   :email_address => "ChrisKnight.mail@gmail.com",
   :looking_for_description => "I am really motivated to find a position where I can work alongside seasoned developers, and expand on the full stack of my devloping skills in Rails, Javascript, and HTML/CSS.",
   :best_at => ["Participating in a team", "Having accountability for my work", "Being professional and approachable."],

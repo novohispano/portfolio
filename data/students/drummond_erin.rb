@@ -1,6 +1,7 @@
 {
   :last_name => "Drummond",
   :first_name => "Erin",
+  :image_url => "/images/students/gschool0/erin.jpg",
   :email_address => "e.b.drummond@gmail.com",
   :looking_for_description => "I'm looking for a company with a culture of mentoring new employees and enthusiastically encourages my growth and creativity in becoming a mature developer.  I would like to work for a company that thinks of its employees as more than just employees, but as part of the company family, and that encourages innovative new ideas from everyone.  I want to work in an environment where my co-workers are excited about the work they are doing, take pride in the code they write, have open communication practices, and celebrate team and individual successes.  I would like to find a place that has room for me to grow within the company, and offers positive and constructive feedback to help me become a strong developer.  Culturally speaking, spontaneous events like pub trivia nights on the history of the company or a beer and bacon party?  Yes, please - I'll even help you plan and execute it.",
   :best_at => ["Ruby on Rails", "Persistent problem-solving", "Debugging"],

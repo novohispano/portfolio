@@ -2,6 +2,7 @@
 {
   :last_name => "Téllez",
   :first_name => "Jorge",
+  :image_url => "/images/students/gschool0/jorge.jpg",
   :email_address => "novohispano@gmail.com",
   :looking_for_description => "I want to build carefully crafted products.",
   :best_at => ["Product Design", "Backend", "Frontend"],
