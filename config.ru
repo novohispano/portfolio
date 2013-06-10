@@ -5,13 +5,6 @@ require 'middleman/rack'
 require "rack/rewrite"
 
 use Rack::Rewrite do
-  rewrite %r{^/courses/(\w+)}, lambda {|match, rack_env|
-    if match[1].empty?
-      return "/courses"
-    else
-      return "/courses/#{match[1]}.html"
-    end
-  }
   rewrite %r{/(.+)}, lambda {|match, rack_env|
     if match[1].end_with?('/')
       fragment = match[1][0..-2]
