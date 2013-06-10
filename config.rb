@@ -7,7 +7,7 @@ end
 
 helpers do
   def student_path(student)
-    "/students/#{student.slug}.html"
+    "/students/#{student.slug}"
   end
 end
 

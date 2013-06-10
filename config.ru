@@ -2,7 +2,6 @@ require 'bundler'
 Bundler.require
 require 'puma'
 require 'middleman/rack'
-require './middleman_ext/data'
 require "rack/rewrite"
 
 use Rack::Rewrite do
