@@ -3,6 +3,7 @@ require 'data/student'
 Student.all.each do |student|
   puts "Creating url for student: /students/#{student.slug}.html"
   proxy "/students/#{student.slug}.html", "/student.html", :locals => { :student => student }
+  proxy "/students/#{student.slug}", "/student.html", :locals => { :student => student }
 end
 
 helpers do
