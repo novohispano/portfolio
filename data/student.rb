@@ -42,7 +42,7 @@ class Student
   attribute :project_3, [ :code, :project_3 ], Project
 
   def projects
-    [ project_1, project_2, project_3 ]
+    [ project_1, project_2, project_3 ].select { |p| p.content }
   end
 
   def slug
