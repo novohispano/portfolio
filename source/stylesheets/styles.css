@@ -397,7 +397,7 @@ blockquote, .quote blockquote p {
   margin: 0 0 20px;
   font-size: 13px;
   }
-.pill-selector li {display: inline; float: left;}
+.pill-selector li { display: inline-block; }
 .pill-selector a {
   padding: 1px 6px;
   background: none;
@@ -717,7 +717,7 @@ blockquote, .quote blockquote p {
   display: inline;
   float: left;
   width: 57px;
-  margin: 0 0 0 20px;
+  margin: 0 0 10px 20px;
   border-radius: 11px;
   padding: 2px;
   background: #fff;
@@ -1011,6 +1011,10 @@ input[type="submit"]:hover, .btn a:hover {
 
 #jsl-video {float:left;}
 
+
+/* GSCHOOL PORTFOLIOS
+============================================================================ */
+
 /* HEADER
 ======================================== */
 
@@ -1095,11 +1099,75 @@ footer {
   }
 
   aside {
-    width: 20%;
+    width: 25%;
   }
 
   article {
     width: 70%;
+  }
+
+}
+
+/* START
+============================================================================ */
+
+/* FILTERS
+======================================== */
+
+.filters {
+  text-align: left;
+  border-top: 1px solid #e7e5da;
+  padding: 14px 0 14px;
+  margin: 40px 0 30px;
+  overflow: hidden;
+}
+.filters h3 {
+  font-size: 16px;
+  color: #545454;
+}
+
+.btn-selector {
+  font-size: 13px;
+  line-height: 22px;
+  list-style: none;
+  margin: 0 0 16px 0;
+  overflow: hidden;
+}
+.btn-selector li {
+  margin: 0 0 4px;
+  display: inline-block;
+}
+.btn-selector li:last-child {
+  margin: 0;
+}
+.btn-selector .label {
+  font-weight: bold;
+}
+.btn-selector a {
+  background: #e7e5da;
+  background: #fff;
+  border: 1px solid #e7e5da;
+  border-radius: 4px;
+  padding: 1px 4px 0;
+  display: inline-block;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.32) inset;
+}
+.btn-selector a:hover {
+  background: #81c758;
+  border-color: #74bd4a;
+  color: #fff;
+}
+.btn-selector .active a {
+  background: #6AAD44;
+  border-color: #5f9e3a;
+  color: #fff;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .btn-selector .label {
+    display: block;
   }
 
 }
