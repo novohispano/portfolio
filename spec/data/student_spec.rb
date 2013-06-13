@@ -2,16 +2,31 @@ require 'spec_helper'
 require 'data/student'
 
 describe Student do
-  let(:subject) { Student.all.first }
+  let(:subject) { Student.all.find { |student| student.name == "Erin Drummond" } }
 
   its(:name) { should eq "Erin Drummond" }
   its(:email_address) { should eq "e.b.drummond@gmail.com" }
-  its(:looking_for) { should eq ['Mentoring', 'Flexible pairing', 'Advancement opportunities' ] }
-  its(:locations) { should eq ["Denver", "Portland", "Boulder", "Chicago", "International"] }
+  its(:looking_for) { should eq  ["Full stack development with a focus on the back end", "Flexible pairing", "Employee growth through mentoring"] }
   its(:resume) { should eq "http://ebdrummond.com/resume.pdf" }
   its(:references) { should eq ['Katrina Owen', 'Kareem Grant', 'Kyle Suss'] }
 
   its(:github_url) { should eq 'http://github.com/ebdrummond' }
+
+  describe "locations" do
+    describe "first location" do
+      let(:location) { subject.locations.first }
+
+      it "#name" do
+        location.name.should eq "Denver, CO"
+      end
+
+      it "#slug" do
+        location.slug.should eq "denver-co"
+      end
+
+    end
+
+  end
 
   describe "code" do
     let(:project) { subject.projects.first }

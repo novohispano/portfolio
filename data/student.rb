@@ -1,4 +1,5 @@
 require_relative 'has_attributes'
+require_relative 'location'
 
 class Student
   include HasAttributes
@@ -31,6 +32,8 @@ class Student
   def name
     [ first_name, last_name ].join(" ")
   end
+
+  attribute :locations, [ :locations ], Location
 
   class Project
     include HasAttributes

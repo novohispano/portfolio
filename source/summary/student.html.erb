@@ -1,0 +1,9 @@
+<li id="<%= student.slug %>" data-name="<%= student.name %>" data-location="<%= student.locations.map {|l| l.slug }.join(" ") %>">
+  <h2><%= link_to student.name, student_path(student) %></h2>
+  <div class="headshot">
+    <%= link_to image_tag(student.image_url, alt: student.name), student_path(student) %>
+  </div>
+  <div class="info">
+    <%= truncate(student.looking_for_description, length: 200, omission: "...") %>
+  </div>
+</li>

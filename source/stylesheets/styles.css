@@ -1132,6 +1132,7 @@ footer {
   list-style: none;
   margin: 0 0 16px 0;
   overflow: hidden;
+  cursor: pointer;
 }
 .btn-selector li {
   margin: 0 0 4px;
@@ -1157,6 +1158,17 @@ footer {
   border-color: #74bd4a;
   color: #fff;
 }
+
+.btn-selector a.selected {
+  background: #81c758;
+  color: #fff;
+}
+
+.btn-selector a.selected:hover {
+  background: #ddd;
+  color: #545454;
+}
+
 .btn-selector .active a {
   background: #6AAD44;
   border-color: #5f9e3a;
