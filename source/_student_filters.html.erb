@@ -1,0 +1,37 @@
+<div class="filters">
+  <h3>Filter students</h3>
+  <ul class="btn-selector">
+    <li class="label">Who wants to work in a</li>
+    <li><a href="#">Full Stack</a></li>
+    <li><a href="#">Front-End</a></li>
+    <li><a href="#">Back-End</a></li>
+    <li class="active"><a href="#">Any</a></li>
+  </ul>
+  <ul class="btn-selector">
+    <li class="label">Who prefers to</li>
+    <li><a href="#">Pair Program</a></li>
+    <li><a href="#">Work Solo</a></li>
+    <li class="active"><a href="#">Any</a></li>
+  </ul>
+  <ul class="btn-selector">
+    <li class="label">Who prefers to work in a</li>
+    <li><a href="#">Consultancy</a></li>
+    <li><a href="#">Product Company</a></li>
+    <li class="active"><a href="#">Any</a></li>
+  </ul>
+  <ul class="btn-selector btn-selector-multi locations">
+    <li class="label">Locations they're interested in</li>
+    <% Location.all.each do |location| %>
+      <li data-location='<%= location.slug %>'><a><%= location.name %></a></li>
+    <% end %>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+
+    var locations = new Locations(".locations li");
+    var students = new Students("ul.team li");
+
+  });
+</script>
