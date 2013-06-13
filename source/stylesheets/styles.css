@@ -712,8 +712,8 @@ blockquote, .quote blockquote p {
 
 /* Team */
 
-.thumb-nav {float: left; margin-left: -20px;}
-.thumb-nav li {
+.students-thumbs {float: left; margin-left: -20px;}
+.students-thumbs li {
   display: inline;
   float: left;
   width: 57px;
@@ -722,24 +722,24 @@ blockquote, .quote blockquote p {
   padding: 2px;
   background: #fff;
   }
-.thumb-nav li:hover {background: #6aad44;}
-.thumb-nav li a {
+.students-thumbs li:hover {background: #6aad44;}
+.students-thumbs li a {
   border: none;
   background: none;
   }
-.thumb-nav li img {
+.students-thumbs li img {
   display: block;
   width: 100%;
   max-width: 100%;
   border-radius: 10px;
   }
 
-.team {
+.students {
   list-style: none;
   float: left;
   margin-bottom: 30px;
   }
-.team > li {
+.students > li {
   float: left;
   margin: 20px 0 0;
   padding-top: 30px;
@@ -747,27 +747,27 @@ blockquote, .quote blockquote p {
   line-height: 150%;
   border-top: 1px solid #eee;
   }
-.team li .headshot {
+.students li .headshot {
   float: left;
   width: 160px;
   margin: 4px 30px 0 0;
   }
-.team li .info {float: left; width: 360px;}
-.team li img {
+.students li .info {float: left; width: 360px;}
+.students li img {
   display: block;
   width: 100%;
   max-width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
   }
-.team li .headshot ul {
+.students li .headshot ul {
   list-style: none;
   margin: 0 10px;
   font-size: 13px;
   }
-.team li .headshot li {margin-bottom: 5px;}
-.team li .headshot .ss-twitter:before,
-.team li .headshot .ss-octocat:before,
+.students li .headshot li {margin-bottom: 5px;}
+.students li .headshot .ss-twitter:before,
+.students li .headshot .ss-octocat:before,
 .post-footer .ss-twitter:before {
   padding-right: 6px;
   color: #bbb;
@@ -815,13 +815,13 @@ blockquote, .quote blockquote p {
 .aside .events-list li {margin-bottom: 24px;}
 .aside .events-list h3 {font-size: 16px;}
 .aside .events-list p {font-size: 14px;}
-.aside .thumb-nav {margin: 0 0 20px -5px;}
-.aside .thumb-nav li {
+.aside .students-thumbs {margin: 0 0 20px -5px;}
+.aside .students-thumbs li {
   width: 36px;
   margin: 0 0 10px 5px;
   border-radius: 5px;
   }
-.aside .thumb-nav li img {border-radius: 4px;}
+.aside .students-thumbs li img {border-radius: 4px;}
 
 /* Bottom section */
 

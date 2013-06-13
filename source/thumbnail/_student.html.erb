@@ -1,0 +1,3 @@
+<li data-name="<%= student.name %>" data-location="<%= student.locations.map {|l| l.slug }.join(" ") %>">
+  <%= link_to image_tag(student.image_url), "##{student.slug}" %>
+</li>

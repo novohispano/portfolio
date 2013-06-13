@@ -14,11 +14,11 @@ Student = function(options) {
   };
 
   this.hide = function() {
-    this.elem.fadeOut(400);
+    this.elem.hide();
   };
 
   this.show = function() {
-    this.elem.fadeIn(400);
+    this.elem.show();
   };
 
 }

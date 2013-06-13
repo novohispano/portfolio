@@ -1,6 +1,15 @@
-var Students = function(studentElements) {
+var Students = function(selectors) {
   this.showLocations = [];
-  this.students = this.createStudents( $(studentElements) );
+
+  var students = [];
+
+  $.each(selectors,$.proxy(function(index,selector) {
+    students.push.apply(students, this.createStudents($(selector)));
+  },this));
+
+  this.students = students;
+
+  // this.students = this.createStudents( $(studentElements) );
 
   $.subscribe("filter:location",$.proxy(function(eventObj){
     console.log("Filter update location");
