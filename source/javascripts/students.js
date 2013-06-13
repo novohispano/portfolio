@@ -5,11 +5,22 @@ var Students = function(selectors) {
 
   $.each(selectors,$.proxy(function(index,selector) {
     students.push.apply(students, this.createStudents($(selector)));
+
+    $(selector).hover(function() {
+      $(this).addClass('hover');
+    },function() {
+      $(this).removeClass('hover');
+    });
+
+    $(selector).on("click",function() {
+      if ( $(this).data('url') ) {
+        document.location.href = $(this).data('url');
+      }
+    })
+
   },this));
 
   this.students = students;
-
-  // this.students = this.createStudents( $(studentElements) );
 
   $.subscribe("filter:location",$.proxy(function(eventObj){
     console.log("Filter update location");
