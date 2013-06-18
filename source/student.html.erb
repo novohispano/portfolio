@@ -44,7 +44,7 @@
           </dl>
           <dl>
             <dt>Prefered Locations</dt>
-            <% student.locations.collect{|l| l.name}.sort.each do |location| %>
+            <% student.locations.each do |location| %>
               <dd><%= location %></dd>
             <% end %>
           </dl>
