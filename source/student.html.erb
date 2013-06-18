@@ -17,21 +17,21 @@
 
         <div class="student-info">
           <dl>
-            <dt>Best at</dt>
+            <dt>Best At</dt>
             <% student.best_at.each do |best_at| %>
               <dd><%= best_at %></dd>
             <% end %>
           </dl>
           <dl>
-            <dt>Prefered roles</dt>
+            <dt>Prefered Roles</dt>
             <% student.looking_for.each do |looking_for| %>
               <dd><%= looking_for %></dd>
             <% end %>
           </dl>
           <dl>
-            <dt>Prefered locations</dt>
-            <% student.locations.each do |location| %>
-              <dd><%= location.name %></dd>
+            <dt>Prefered Locations</dt>
+            <% student.locations.collect{|l| l.name}.sort.each do |location| %>
+              <dd><%= location %></dd>
             <% end %>
           </dl>
         </div>
