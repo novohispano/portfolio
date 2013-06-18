@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "github";
+  src: url('webfonts/github-octicons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"]{-ms-zoom: 1;}

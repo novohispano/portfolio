@@ -1198,6 +1198,10 @@ footer {
   text-align: center;
 }
 
+.student aside ul{
+  list-style-type: none;
+}
+
 .student .icon {
   height: 32px;
   width: 32px;
@@ -1222,7 +1226,7 @@ footer {
 }
 
 .student-info {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 
@@ -1237,6 +1241,12 @@ footer {
 }
 .student-info dl:last-child {
   margin-right: 0;
+}
+
+.student-info dd{
+  display: list-item;
+  list-style-type: disc;
+  margin-left: 1.1em;
 }
 
 .project {
