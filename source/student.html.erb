@@ -37,7 +37,12 @@
         </div>
 
         <h2>Portfolio</h2>
-        <p><%= link_to "Github", student.github_url %></p>
+        <p>
+          <a href='<%= student.github_url %>'>
+            <%= image_tag 'github.png', :class => 'icon' %>
+            <span class='icon_description'>My full Github profile</span>
+          </a>
+        </p>
 
         <% student.projects.each do |project| %>
           <div class="project">

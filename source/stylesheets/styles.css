@@ -1198,6 +1198,16 @@ footer {
   text-align: center;
 }
 
+.student .icon {
+  height: 32px;
+  width: 32px;
+  margin-bottom: -10px;
+}
+
+.student .icon_description {
+
+}
+
 .student h1 {
   text-align: center;
 }
