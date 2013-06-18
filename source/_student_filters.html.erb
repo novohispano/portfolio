@@ -3,7 +3,7 @@
 
   <ul class="btn-selector btn-selector-multi locations">
     <li class="label">Locations they're interested in</li>
-    <% Location.all.each do |location| %>
+    <% Location.all.sort_by{|l| l.name}.each do |location| %>
       <li data-location='<%= location.slug %>'><a><%= location.name %></a></li>
     <% end %>
   </ul>
