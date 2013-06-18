@@ -5,6 +5,7 @@ gem "rack-rewrite"
 gem "rack-contrib"
 gem "puma"
 gem "redcarpet"
+gem 'foreman'
 
 group :development do
   gem "rspec"
