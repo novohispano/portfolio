@@ -13,7 +13,7 @@
       <article>
 
         <h1><%= student.name %></h1>
-        <p><%= student.looking_for_description %></p>
+        <p><%= markdown(student.looking_for_description) %></p>
 
         <div class="student-info">
           <dl>
