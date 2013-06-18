@@ -20,9 +20,9 @@ class Student
   end
 
   def self.all
-    student_files.map do |student_file|
+    @students ||= student_files.map do |student_file|
       Student.new student_data(student_file)
-    end
+    end.sort_by{|s| s.last_name}
   end
 
   attributes :first_name, :last_name, :email_address, :image_url,
