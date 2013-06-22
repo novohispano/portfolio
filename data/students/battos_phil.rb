@@ -28,7 +28,7 @@
       :what_to_look_for => ['Twitter API', 'Real-time chat and question board', 'Separate "rooms" for each track']
     }
   },
-  :resume => "",
+  :resume => "http://goo.gl/81IDd",
   :references => ['Robert Jackson', 'Timothy Clayton', 'Arjun Sharma'],
   :other_notes => ""
 }
