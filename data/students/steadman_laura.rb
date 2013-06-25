@@ -3,6 +3,7 @@
   :first_name => "Laura",
   :image_url => "/images/students/gschool0/laura.jpg",
   :email_address => "lauramsteadman@gmail.com",
+  :skype_username => "laura.steadman4",
   :looking_for_description => "As a full-stack Ruby on Rails developer, I want to work with a great team that values agile processes, code that is eloquent and well-tested, and pair-programming.",
   :best_at => ["TDD for Ruby on Rails", 'Being a Team Player', 'Project Management'],
   :looking_for => ["a challenge", 'great teammates', "a company that values agile processes and the art of Ruby on Rails"],
