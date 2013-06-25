@@ -3,10 +3,11 @@
   :first_name => "Erin",
   :image_url => "/images/students/gschool0/erin.jpg",
   :email_address => "e.b.drummond@gmail.com",
+  :skype_username => "eebeedrummond"
   :looking_for_description => "I'm looking for a company with a culture of mentoring new employees, and that thinks of its employees as more than just employees, but as part of the company family.  I love what I do, and I want to work in an environment where my co-workers are equally excited about the work they are doing, take pride in the code they write, have open communication practices, and celebrate team successes.  I'm excited about continuing to learn after gSchool, and I hope to work for a company that has a diverse set of problems to tackle that contribute to my growth as a developer.",
   :best_at => ["Ruby on Rails", "Persistent problem-solving", "Debugging"],
   :looking_for => ["Full stack development with a focus on the back end", "Flexible pairing", "Employee growth through mentoring"],
-  :locations => ["Denver, CO", "Portland, OR", "Chicago, IL", "Boulder, CO", "International"],
+  :locations => ["Chicago, IL", "Portland, OR", "Denver, CO", "Boulder, CO", "International"],
   :code => {
     :github => 'http://github.com/ebdrummond',
     :project_1 => {
