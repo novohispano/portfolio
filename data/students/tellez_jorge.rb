@@ -1,9 +1,9 @@
-
 {
   :last_name => "Téllez",
   :first_name => "Jorge",
   :image_url => "/images/students/gschool0/jorge.jpg",
   :email_address => "novohispano@gmail.com",
+  :skype_username => "novohispano",
   :looking_for_description => "I want to build carefully crafted products.",
   :best_at => ["Product Design", "Backend", "Frontend"],
   :looking_for => ["Product-Oriented company.", "Great teams.", "Outstanding quality."],
@@ -30,6 +30,6 @@
     }
   },
   :resume => "http://novohispanoblog.herokuapp.com/resume.html",
-  :references => ['Frank Webber, Katrina Owen, Mislav Marohnić'],
+  :references => ['Jeff Casimir, Frank Webber, Katrina Owen, Mislav Marohnić'],
   :other_notes => "I started two companies. I have Business Development, Communications and Product Development experience in the US and Latin America."
 }
